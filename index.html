@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>D25 Assistant — AI Workspace Agent for Google Workspace</title>
+  <link rel="icon" type="image/x-icon" href="/CompanyLogo/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/CompanyLogo/favicon.png" />
+  <link rel="apple-touch-icon" href="/CompanyLogo/favicon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -818,9 +821,12 @@
       </div>
 
       <div class="flex flex-wrap items-center gap-5 text-xs text-[#8B949E]">
-        <button type="button" onclick="openModal('privacy')" class="hover:text-[#F0F6FC] transition-colors cursor-pointer">
+        <a href="/privacy" class="hover:text-[#F0F6FC] transition-colors">
           Privacy
-        </button>
+        </a>
+        <a href="/terms" class="hover:text-[#F0F6FC] transition-colors">
+          Terms
+        </a>
         <button type="button" onclick="openModal('scopes')" class="hover:text-[#F0F6FC] transition-colors cursor-pointer">
           OAuth Scopes Modal
         </button>
@@ -1248,7 +1254,7 @@
 
     // Google OAuth Sign-In Handler
     function triggerGoogleOAuth() {
-      window.location.assign('/api/auth/login');
+      window.location.assign('https://d25.dhiraj.live/api/auth/login');
     }
 
     // Modal Content for OAuth Scopes, Privacy, and Architecture
